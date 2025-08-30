@@ -1,0 +1,59 @@
+<svg width="100%" height="300" viewBox="0 0 1920 300" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Tight short blue halo fade -->
+    <linearGradient id="blueHalo" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f1535" />
+      <stop offset="30%" stop-color="#050818" />
+      <stop offset="100%" stop-color="#000000" />
+    </linearGradient>
+
+    <!-- Red stroke -->
+    <linearGradient id="redLine" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ff0057" />
+      <stop offset="100%" stop-color="#ff0057" />
+    </linearGradient>
+
+    <!-- Red glow under line -->
+    <radialGradient id="redGlow" cx="50%" cy="0%" r="55%" fx="50%" fy="0%">
+      <stop offset="0%" stop-color="#ff0057" stop-opacity="0.4"/>
+      <stop offset="80%" stop-color="#ff0057" stop-opacity="0.05" />
+      <stop offset="100%" stop-color="#ff0057" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Vertical red flare rays -->
+    <linearGradient id="redRays" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ff0057" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#ff0057" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Thickness mask -->
+    <linearGradient id="fadeMask" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="white" stop-opacity="0.3" />
+      <stop offset="30%" stop-color="white" stop-opacity="1" />
+      <stop offset="70%" stop-color="white" stop-opacity="1" />
+      <stop offset="100%" stop-color="white" stop-opacity="0.3" />
+    </linearGradient>
+
+    <mask id="taperedLine">
+      <path d="M0,130 C600,50 1320,50 1920,130" stroke="url(#fadeMask)" stroke-width="20" fill="none"/>
+    </mask>
+  </defs>
+
+  <!-- Red glow under curve -->
+  <path d="M0,130 C600,50 1320,50 1920,130 L1920,300 L0,300 Z" fill="url(#redGlow)" />
+
+  <!-- Red vertical rays -->
+  <g opacity="0.4">
+    <rect x="150" y="130" width="12" height="170" fill="url(#redRays)" />
+    <rect x="480" y="130" width="8" height="170" fill="url(#redRays)" />
+    <rect x="960" y="130" width="16" height="170" fill="url(#redRays)" />
+    <rect x="1440" y="130" width="8" height="170" fill="url(#redRays)" />
+    <rect x="1770" y="130" width="10" height="170" fill="url(#redRays)" />
+  </g>
+
+  <!-- Red curve line with thickened middle -->
+  <path d="M0,130 C600,50 1320,50 1920,130" stroke="url(#redLine)" stroke-width="20" fill="none" mask="url(#taperedLine)" />
+
+  <!-- Halo-like blue shade below curve -->
+  <path d="M0,130 C600,50 1320,50 1920,130 L1920,300 L0,300 Z" fill="url(#blueHalo)" />
+</svg>
