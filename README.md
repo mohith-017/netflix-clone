@@ -1,8 +1,17 @@
 # Netflix Clone 🎬
 
-## Screenshots
+A Netflix landing page clone built using HTML, CSS, and JavaScript.
 
+## 📸 Screenshots
+
+### 🏠 Home Page
 ![Home Page](assets/screenshots/screenshot1.png)
-![Reason to join Netflix page](assets/screenshots/screenshot2.png)
-![FAQ page and another login](assets/screenshots/screenshot3.png)
-![Footer of Netflix page](assets/screenshots/screenshot4.png)
+
+### 📋 Reasons to Join
+![Reasons Page](assets/screenshots/screenshot2.png)
+
+### ❓ FAQ Section
+![FAQ Page](assets/screenshots/screenshot3.png)
+
+### 📍 Footer
+![Footer](assets/screenshots/screenshot4.png)
